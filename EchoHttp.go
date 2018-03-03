@@ -121,18 +121,15 @@ package main
 */
 
 import (
-	"net/http"
-	"io/ioutil"
 	"encoding/json"
+	"io/ioutil"
 	"log"
+	"net/http"
 )
 
-
-
 type Result struct {
-	Code int `json:"code"`
+	Code    int    `json:"code"`
 	Message string `json:"message"`
-
 }
 
 func echo(w http.ResponseWriter, r *http.Request) {
